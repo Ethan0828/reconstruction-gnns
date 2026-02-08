@@ -22,6 +22,15 @@ from .subgraph_utils import (
     get_reconstruction_subgraphs_for_node
 )
 
+from .ensemble import (
+    AverageEnsemble,
+    WeightedAverageEnsemble,
+    ConcatenationEnsemble,
+    AttentionEnsemble,
+    StackingEnsemble,
+    get_ensemble_model
+)
+
 __all__ = [
     'NodeGCN',
     'NodeReconstructionGCN',
@@ -32,4 +41,10 @@ __all__ = [
     'get_dataset_info',
     'get_khop_neighborhood',
     'get_reconstruction_subgraphs_for_node',
+    'AverageEnsemble',
+    'WeightedAverageEnsemble',
+    'ConcatenationEnsemble',
+    'AttentionEnsemble',
+    'StackingEnsemble',
+    'get_ensemble_model',
 ]
